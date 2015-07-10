@@ -1,0 +1,115 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+
+
+
+
+<main id="content" role="main">
+
+  <a href="question6" class="no-back-link">Back</a>    <span class="example-back-link">Submit</span>
+
+  <h1 class="heading-medium">
+    Confirmation
+  </h1>
+
+  <section class="playback-container" name="certificate">
+    <h3 class="heading-medium">My details</h3>
+    <table class="table-summary">
+      <tbody>
+        <tr>
+          <th class="table-summary-title" scope="row">Name</th>
+          <td class="table-summary-content">
+            <span class="playback-cell" data-playback="first-name-2"></span>
+            <span class="playback-cell" data-playback="last-name-2"></span>
+          </td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Email address</th>
+          <td class="table-summary-content"><span class="playback-cell" data-playback="email-address"></span></td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Telephone</th>
+          <td class="table-summary-content"><span class="playback-cell" data-playback="telephone-number"></span></td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Address</th>
+          <td class="table-summary-content">1 Church Lane, Westbere, Canterbury, Kent CT2 0HA United Kingdom</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="playback-container" name="certificate">
+    <h3 class="heading-medium">Details of query</h3>
+    <table class="table-summary">
+      <tbody>
+        <tr>
+          <th class="table-summary-title" scope="row">What</th>
+          <td class="table-summary-content"><span class="playback-cell" data-playback="certificate-type"></span></td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Name of person on certificate</th>
+          <td class="table-summary-content">
+            <span class="playback-cell" data-playback="first-name"></span>
+            <span class="playback-cell" data-playback="last-name"></span>
+          </td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Date of order</th>
+          <td class="table-summary-content">
+            <span class="playback-cell" data-playback="order-date-day"></span>
+            <span class="playback-cell" data-playback="order-date-month"></span>
+            <span class="playback-cell" data-playback="order-date-year"></span>
+          </td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">How was order placed</th>
+          <td class="table-summary-content">
+            <span class="playback-cell" data-playback="radio-order-how"></span>
+            (<span class="order-extra-name"></span> <span class="playback-cell" data-playback="account-number"></span>)
+          </td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Type of service</th>
+          <td class="table-summary-content"><span class="playback-cell" data-playback="service-type"></span></td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Order number</th>
+          <td class="table-summary-content"><span class="playback-cell" data-playback="order-number"></span></td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Type of complaint</th>
+          <td class="table-summary-content"><span class="playback-cell" data-playback="radio-certificate-select"></span></td>
+        </tr>
+        <tr>
+          <th class="table-summary-title" scope="row">Details of complaint</th>
+          <td class="table-summary-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure. (I have previously been in contact about this order.)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <p id="submit" class="submit-query"><a href="" rel="external" class="button button-get-started" role="button">Submit query</a></p>
+
+</main>
+
+<script type="text/javascript">
+var certData = JSON.parse(localStorage['certificate']);
+var orderMethod = certData['radio-order-how'];
+if (orderMethod == "online"){
+  $(".order-extra-name").html("COL number");
+} else {
+  $(".order-extra-name").html("account number");
+}
+</script>
+
+
+{{/content}}
+
+{{/layout}}

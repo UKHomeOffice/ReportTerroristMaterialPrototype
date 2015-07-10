@@ -4,10 +4,16 @@
   {{>includes/elements_head}}
 {{/head}}
 
-{{$content}}
-<main id="content" role="main">
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
 
-  <a href="/examples/" class="example-back-link">Back to the GOV.UK prototype kit examples</a>
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+<main id="page-container" role="main">
+
+  <a href="/" class="example-back-link">Back to the GOV.UK prototyping kit</a>
 
   <h1 class="heading-xlarge">
     New grid layout example

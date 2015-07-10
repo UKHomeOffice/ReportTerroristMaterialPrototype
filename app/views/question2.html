@@ -1,0 +1,49 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+
+  <form action="question3" method="get" class="form" name="certificate">
+
+
+ <a href="question1" class="no-back-link">Back</a>    <span class="example-back-link">Question 2 of 6</span>
+
+
+<div class="form-group">
+      <label class="form-label-bold" for="full-name">Please give the full name of the person on the certificate you requested</label>
+    </div>
+
+    <!-- Name -->
+    <div class="form-group">
+    <div class="form-group">
+    <label class="form-label" for="first-name-2">First name</label>
+    <input class="form-control" id="first-name-2" type="text" name="first-name" required>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="last-name-2">Last name</label>
+    <input class="form-control" id="last-name-2" type="text" name="last-name" required>
+  </div>
+
+  </div>
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}

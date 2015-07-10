@@ -1,0 +1,154 @@
+{{<layout}}
+
+{{$head}}
+{{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+
+  <a href="question3" class="no-back-link">Back</a>    <span class="example-back-link">Question 4 of 6</span>
+
+  <form action="question51" method="get" class="form" name="certificate">
+
+
+
+
+    <!-- Order how -->
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Please tell us how you placed your order</label>
+    </div>
+
+    <div class="form-group">
+     <label class="block-label selectable" for="radio-1">
+       <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="online" data-storage="online">
+        Online
+      </label>
+      <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="online">
+        <div class="form-group">
+          <label class="form-label-bold" for="col-number">Please provide the COL number
+          </label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="account-number" name="account-number">
+        </div>
+        <div class="form-group">
+          <details>
+            <summary><span class="summary">What is a COL number</span></summary>
+            <div class="panel-indent">
+              <p>
+                You would have received a COL number when you made the order online. The number would have been in the email we sent you as confirmation of the order. COL numbers typically look like this HMPO45678ERF0.
+              </p>
+              <p>
+                If you can’t provide the COL number you may have to send copies of the certificate you ordered through the post.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <label class="block-label selectable" for="radio-2">
+        <input id="radio-2" type="radio" name="radio-order-how" value="telephone" data-storage="telephone">
+        Telephone
+      </label>
+      <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="telephone">
+        <div class="form-group">
+          <label class="form-label-bold" for="account-number">Please provide the account number</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="account-number" name="account-number">
+        </div>
+        <div class="form-group">
+          <details>
+            <summary><span class="summary">Help finding account number</span></summary>
+            <div class="panel-indent">
+              <p>
+                Your account number would have been given to you when you ordered the certificate. It will have been given to you when you telephoned to make the original order. Account numbers start with HMPO and typically look like this HMPO45678ERF0
+              </p>
+              <p>
+                If you can’t provide the reference number you may have to send copies of the certificate you ordered through the post.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <label class="block-label selectable" for="radio-3">
+        <input id="radio-3" type="radio" name="radio-order-how" value="post" data-storage="post">
+        Post
+      </label>
+      <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="post">
+        <div class="form-group">
+          <label class="form-label-bold" for="account-number">Please provide the account number</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="account-number" name="account-number">
+        </div>
+        <div class="form-group">
+          <details>
+            <summary><span class="summary">Help finding account number</span></summary>
+            <div class="panel-indent">
+              <p>
+                Your account number would have been given to you when you ordered the certificate. It will have been given to you when you telephoned to make the original order. Account numbers start with HMPO and typically look like this HMPO45678ERF0
+              </p>
+              <p>
+                If you can’t provide the reference number you may have to send copies of the certificate you ordered through the post.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  <!-- Order type paid for -->
+  <div class="form-group">
+    <label class="form-label-bold" for="ni-number">Which service did you pay for
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="block-label" for="radio-stan">
+      <input id="radio-stan" type="radio" name="service-type" value="Standard" data-storage="standard">
+      Standard
+    </label>
+    <label class="block-label" for="radio-pri">
+      <input id="radio-pri" type="radio" name="service-type" value="Priority" data-storage="priority">
+      Priority
+    </label>
+  </div>
+
+  <!-- Order number -->
+  <div class="form-group">
+    <label class="form-label-bold" for="ni-number">Please tell us the order number
+    </label>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="order-number" name="order-number">
+  </div>
+  <div class="form-group">
+    <details>
+      <summary><span class="summary">Help finding the order number</span></summary>
+      <div class="panel-indent">
+        <p>
+          Your order number would have been given to you when you ordered the certificate. It will be on any email or postal correspondence regarding the order. Orders start with HMPO and typically look like this HMPO45678ERF0
+        </p>
+        <p>
+          If you can’t provide the reference number you may have to send copies of the certificate you ordered through the post.
+        </p>
+      </div>
+    </details>
+  </div>
+
+
+  <!-- Primary buttons, secondary links -->
+  <div class="form-group">
+    <input type="submit" class="button" value="Continue">
+  </div>
+
+</form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+{{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}
