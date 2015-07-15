@@ -1,95 +1,78 @@
 {{<layout}}
 
 {{$head}}
-{{>includes/elements_head}}
+  {{>includes/elements_head}}
 {{/head}}
 
 {{$content}}
 <main id="content" role="main">
 
-  <a href="question4" class="no-back-link">Back</a>    <span class="example-back-link">Question 5 of 6</span>
+  <span class="example-back-link">Question 1</span>
 
-  <form action="question6" method="get" class="form">
-
-    <h1 class="form-title heading-medium">Please select the type of complaint or feedback
-    </h1>
+  
+  <form action="question02" method="get" class="form" name="certificate">
 
 
     <!-- Certificate selection -->
+
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Select the type of complaint or feedback</label>
+    </div>
     <div class="form-group">
       <label class="block-label selectable" for="radio-1">
-        <input id="radio-1" type="radio" name="radio-certificate-select" value="service-complaint">
+        <input id="radio-1" type="radio" name="radio-certificate-select" value="service-complaint" data-storage="service-complaint">
         Service complaint
       </label>
-      <label class="block-label selectable" for="radio-2">
-        <input id="radio-2" type="radio" name="radio-certificate-select" value="certificate-not-received">
-        Certificate not received
-      </label>
-      <label class="block-label selectable" for="radio-3">
-        <input id="radio-3" type="radio" name="radio-certificate-select" value="wrong-certificate-received">
-        Wrong certificate received
-      </label>
-      <label class="block-label selectable" for="radio-4">
-        <input id="radio-4" type="radio" name="radio-certificate-select" value="quality-issue">
-        Quality issue
-      </label>
-      <label class="block-label selectable" for="radio-5">
-        <input id="radio-5" type="radio" name="radio-certificate-select" value="compliment">
-        Compliment
-      </label>
-      <label class="block-label selectable" for="radio-6">
-        <input id="radio-6" type="radio" name="radio-certificate-select" value="refund-query">
-        Refund query
-      </label>
-      <label class="block-label selectable" for="radio-6">
-        <input id="radio-6" type="radio" name="radio-certificate-select" value="other">
-        Other
-      </label>
-    </div>
 
-    <!-- Service complaint -->
+<!-- Service complaint -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="service-complaint">
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide details of the complaint
+        <label class="form-label-bold" for="ni-number">Provide details of the complaint
         </label>
       </div>
       <div class="form-group">
-        <textarea class="form-control" id="complaint-details"></textarea>
+        <textarea class="form-control" id="complaint-details" name="complaint-details"></textarea>
       </div>
 
       <div class="form-group">
-        <label class="block-label" for="checkbox-1">
-          <input id="checkbox-1" type="checkbox" value="previous-complaint">
+        <input id="checkbox-1" type="checkbox" value="previous-complaint" name="previous-complaint" data-storage="yes">
           I have made a previous complaint about this order
-        </label>
-      </div>
+       </div>
     </div>
 
-    <!-- Certificate not received -->
+      <label class="block-label selectable" for="radio-2">
+        <input id="radio-2" type="radio" name="radio-certificate-select" value="certificate-not-received" data-storage="certificate-not-received">
+        Certificate not received
+      </label>
+
+<!-- Certificate not received -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="certificate-not-received">
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide further details
+        <label class="form-label-bold" for="ni-number">Provide further details
         </label>
       </div>
       <div class="form-group">
-        <textarea class="form-control" id="complaint-details"></textarea>
+        <textarea class="form-control" id="complaint-details" name="complaint-details"></textarea>
       </div>
 
       <div class="form-group">
-        <label class="block-label" for="checkbox-1">
-          <input id="checkbox-1" type="checkbox" value="previous-contact">
+          <input id="checkbox-1" type="checkbox" value="previous-contact" name="previous-contact" data-storage="yes">
           I have previously been in contact about this
-        </label>
       </div>
     </div>
 
-    <!-- Wrong certificate received -->
+      <label class="block-label selectable" for="radio-3">
+        <input id="radio-3" type="radio" name="radio-certificate-select" value="wrong-certificate-received" data-storage="wrong-certificate-received">
+        Wrong certificate received
+      </label>
+
+ <!-- Wrong certificate received -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="wrong-certificate-received">
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide the names of and any initials on the certificates you received
+        <label class="form-label-bold" for="ni-number">Provide the names of and any initials on the certificates you received
         </label>
       </div>
       <div class="form-group">
@@ -97,7 +80,7 @@
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide any further details
+        <label class="form-label-bold" for="ni-number">Provide any further details
         </label>
       </div>
       <div class="form-group">
@@ -105,18 +88,21 @@
       </div>
 
       <div class="form-group">
-        <label class="block-label" for="checkbox-1">
           <input id="checkbox-1" type="checkbox" value="previous-complaint">
           I have made a previous complaint about this order
-        </label>
       </div>
     </div>
 
-    <!-- Quality issue -->
+      <label class="block-label selectable" for="radio-4">
+        <input id="radio-4" type="radio" name="radio-certificate-select" value="quality-issue" data-storage="quality-issue">
+        Quality issue
+      </label>
+
+<!-- Quality issue -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="quality-issue">
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide further details
+        <label class="form-label-bold" for="ni-number">Provide further details
         </label>
       </div>
       <div class="form-group">
@@ -124,18 +110,21 @@
       </div>
 
       <div class="form-group">
-        <label class="block-label" for="checkbox-1">
           <input id="checkbox-1" type="checkbox" value="previous-contact">
           I have previously been in contact about this
-        </label>
       </div>
     </div>
 
-    <!-- Compliment -->
+      <label class="block-label selectable" for="radio-5">
+        <input id="radio-5" type="radio" name="radio-certificate-select" value="compliment" data-storage="compliment">
+        Compliment
+      </label>
+
+      <!-- Compliment -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="compliment">
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide further details
+        <label class="form-label-bold" for="ni-number">Provide further details
         </label>
       </div>
       <div class="form-group">
@@ -143,7 +132,12 @@
       </div>
     </div>
 
-    <!-- Refund query -->
+      <label class="block-label selectable" for="radio-6">
+        <input id="radio-6" type="radio" name="radio-certificate-select" value="refund-query" data-storage="refund-query">
+        Refund query
+      </label>
+
+       <!-- Refund query -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="refund-query">
 
       <div class="form-group">
@@ -155,7 +149,7 @@
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide the reference number of the refund in question
+        <label class="form-label-bold" for="ni-number">Provide the reference number of the refund in question
         </label>
       </div>
       <div class="form-group">
@@ -176,18 +170,22 @@
         </details>
       </div>
       <div class="form-group">
-        <label class="block-label" for="checkbox-1">
           <input id="checkbox-1" type="checkbox" value="previous-complaint">
           I have made a previous complaint about this order
-        </label>
       </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-6">
+        <input id="radio-6" type="radio" name="radio-certificate-select" value="other" data-storage="other">
+        Other
+      </label>
     </div>
 
     <!-- Other -->
     <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="other">
 
       <div class="form-group">
-        <label class="form-label-bold" for="ni-number">Please provide further details
+        <label class="form-label-bold-2" for="ni-number">Provide further details
         </label>
       </div>
       <div class="form-group">
@@ -195,10 +193,8 @@
       </div>
 
       <div class="form-group">
-        <label class="block-label" for="checkbox-1">
           <input id="checkbox-1" type="checkbox" value="previous-complaint">
           I have made a previous complaint about this order
-        </label>
       </div>
     </div>
 
@@ -214,7 +210,7 @@
 {{/content}}
 
 {{$bodyEnd}}
-{{>includes/elements_scripts}}
+  {{>includes/elements_scripts}}
 {{/bodyEnd}}
 
 {{/layout}}

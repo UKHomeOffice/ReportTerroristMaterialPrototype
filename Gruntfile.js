@@ -12,8 +12,7 @@ module.exports = function(grunt){
           includePaths: [
             'govuk_modules/govuk_template/assets/stylesheets',
             'govuk_modules/govuk_frontend_toolkit/stylesheets'
-          ],
-          outputStyle: 'expanded'
+          ]
         },
         files: [{
           expand: true,
@@ -126,16 +125,12 @@ module.exports = function(grunt){
     }
   );
 
-  grunt.registerTask('generate-assets', [
+  grunt.registerTask('default', [
     'clean',
     'copy',
     'convert_template',
     'replace',
-    'sass'
-  ]);
-
-  grunt.registerTask('default', [
-    'generate-assets',
+    'sass',
     'concurrent:target'
   ]);
 

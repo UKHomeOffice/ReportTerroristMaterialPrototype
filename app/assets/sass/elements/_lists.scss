@@ -10,16 +10,13 @@ ol {
 // Bulleted lists
 .list-bullet {
   list-style-type: disc;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
 // Numbered lists
 .list-number {
   list-style-type: decimal;
-  padding-left: 20px;
-  @include ie-lte(7) {
-    padding-left: 28px;
-  }
+  margin-left: 25px;
 }
 
 .list-bullet,

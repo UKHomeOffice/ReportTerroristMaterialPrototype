@@ -9,40 +9,194 @@
 
   <span class="example-back-link">Question 1</span>
 
+  
   <form action="question2" method="get" class="form" name="certificate">
 
-    <div class="form-group">
-      <label class="form-label-bold" for="full-name">What type of certificate did you originally order?</label>
-    </div>
 
     <!-- Certificate selection -->
-    <div class="form-group">
-    <label class="block-label" for="radio-1">
-    <input id="radio-1" type="radio" name="certificate-type" value="Birth" data-storage="Birth">
-    Birth
-  </label>
-  <label class="block-label" for="radio-2">
-    <input id="radio-2" type="radio" name="certificate-type" value="Marriage" data-storage="Marriage">
-    Marriage
-  </label>
-  <label class="block-label" for="radio-3">
-    <input id="radio-3" type="radio" name="certificate-type" value="Death" data-storage="Death">
-    Death
-  </label>
-  <label class="block-label" for="radio-4">
-    <input id="radio-4" type="radio" name="certificate-type" value="Adoption" data-storage="Adoption">
-    Adoption
-  </label>
-  <label class="block-label" for="radio-5">
-    <input id="radio-5" type="radio" name="certificate-type" value="Overseas" data-storage="Overseas">
-    Overseas
-  </label>
-  <label class="block-label" for="radio-6">
-    <input id="radio-6" type="radio" name="certificate-type" value="Civil Partnership" data-storage="Civil Partnership">
-    Civil Partnership
-  </label>
 
-  </div>
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Please select the type of complaint or feedback</label>
+    </div>
+    <div class="form-group">
+      <label class="block-label selectable" for="radio-1">
+        <input id="radio-1" type="radio" name="radio-certificate-select" value="service-complaint" data-storage="service-complaint">
+        Service complaint
+      </label>
+
+<!-- Service complaint -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="service-complaint">
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide details of the complaint
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details" name="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+        <input id="checkbox-1" type="checkbox" value="previous-complaint" name="previous-complaint" data-storage="yes">
+          I have made a previous complaint about this order
+       </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-2">
+        <input id="radio-2" type="radio" name="radio-certificate-select" value="certificate-not-received" data-storage="certificate-not-received">
+        Certificate not received
+      </label>
+
+<!-- Certificate not received -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="certificate-not-received">
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide further details
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details" name="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+          <input id="checkbox-1" type="checkbox" value="previous-contact" name="previous-contact" data-storage="yes">
+          I have previously been in contact about this
+      </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-3">
+        <input id="radio-3" type="radio" name="radio-certificate-select" value="wrong-certificate-received" data-storage="wrong-certificate-received">
+        Wrong certificate received
+      </label>
+
+ <!-- Wrong certificate received -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="wrong-certificate-received">
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide the names of and any initials on the certificates you received
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide any further details
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+          <input id="checkbox-1" type="checkbox" value="previous-complaint">
+          I have made a previous complaint about this order
+      </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-4">
+        <input id="radio-4" type="radio" name="radio-certificate-select" value="quality-issue" data-storage="quality-issue">
+        Quality issue
+      </label>
+
+<!-- Quality issue -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="quality-issue">
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide further details
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+          <input id="checkbox-1" type="checkbox" value="previous-contact">
+          I have previously been in contact about this
+      </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-5">
+        <input id="radio-5" type="radio" name="radio-certificate-select" value="compliment" data-storage="compliment">
+        Compliment
+      </label>
+
+      <!-- Compliment -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="compliment">
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide further details
+        </label>
+      </div>
+      <div class="form-group">
+         <textarea class="form-control" id="complaint-details"></textarea>
+      </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-6">
+        <input id="radio-6" type="radio" name="radio-certificate-select" value="refund-query" data-storage="refund-query">
+        Refund query
+      </label>
+
+       <!-- Refund query -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="refund-query">
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">If you think there is an error with a refund, please provide full details
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label-bold" for="ni-number">Please provide the reference number of the refund in question
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="reference-number">
+      </div>
+
+      <div class="form-group">
+        <details>
+          <summary><span class="summary">Help finding the reference number</span></summary>
+          <div class="panel-indent">
+            <p>
+              Your reference number would have been given to you when you initially received a refund. Reference numbers start with HMPO and typically look like this HMPO45678ERF0
+            </p>
+            <p>
+              If you can’t provide the reference number you may have to send copies of the certificate you ordered through the post.
+            </p>
+          </div>
+        </details>
+      </div>
+      <div class="form-group">
+          <input id="checkbox-1" type="checkbox" value="previous-complaint">
+          I have made a previous complaint about this order
+      </div>
+    </div>
+
+      <label class="block-label selectable" for="radio-6">
+        <input id="radio-6" type="radio" name="radio-certificate-select" value="other" data-storage="other">
+        Other
+      </label>
+    </div>
+
+    <!-- Other -->
+    <div class="connected optional-section optional-section-radio-certificate-select" data-toggle-value="other">
+
+      <div class="form-group">
+        <label class="form-label-bold-2" for="ni-number">Please provide further details
+        </label>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="complaint-details"></textarea>
+      </div>
+
+      <div class="form-group">
+          <input id="checkbox-1" type="checkbox" value="previous-complaint">
+          I have made a previous complaint about this order
+      </div>
+    </div>
 
 
     <!-- Primary buttons, secondary links -->

@@ -1,0 +1,62 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <span class="example-back-link">Question 1</span>
+
+  <form action="question2" method="get" class="form" name="certificate">
+
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">What type of certificate did you originally order?</label>
+    </div>
+
+    <!-- Certificate selection -->
+    <div class="form-group">
+    <label class="block-label" for="radio-1">
+    <input id="radio-1" type="radio" name="certificate-type" value="Birth" data-storage="Birth">
+    Birth
+  </label>
+  <label class="block-label" for="radio-2">
+    <input id="radio-2" type="radio" name="certificate-type" value="Marriage" data-storage="Marriage">
+    Marriage
+  </label>
+  <label class="block-label" for="radio-3">
+    <input id="radio-3" type="radio" name="certificate-type" value="Death" data-storage="Death">
+    Death
+  </label>
+  <label class="block-label" for="radio-4">
+    <input id="radio-4" type="radio" name="certificate-type" value="Adoption" data-storage="Adoption">
+    Adoption
+  </label>
+  <label class="block-label" for="radio-5">
+    <input id="radio-5" type="radio" name="certificate-type" value="Overseas" data-storage="Overseas">
+    Overseas
+  </label>
+  <label class="block-label" for="radio-6">
+    <input id="radio-6" type="radio" name="certificate-type" value="Civil Partnership" data-storage="Civil Partnership">
+    Civil Partnership
+  </label>
+
+  </div>
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}
