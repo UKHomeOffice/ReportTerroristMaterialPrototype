@@ -1,0 +1,118 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+<a href="question06" class="no-back-link">Back</a>    <span class="example-back-link">Question 7 of 7</span>
+
+  <form action="confirmation2" method="get" class="form" name="certificate">
+
+   <!-- Contact details -->
+   <div class="form-group">
+      <label class="form-label-bold" for="full-name">What are your contact details?</label>
+    </div>
+    <div class="form-group">
+    <label class="form-label" for="first-name-2">Name</label>
+    <input class="form-control" id="first-name-2" type="text" name="first-name-2" required>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="email-address">Email address</label>
+    <input class="form-control" id="email-address" type="text" name="email-address" required>
+  </div>
+  <div class="form-group">
+    <label class="form-label" for="telephone-number">Contact telephone number
+    <span class="form-hint">If possible, tell us your daytime telephone number</span></label>
+    <input class="form-control" id="telephone-number" type="numerals" name="telephone-number" required>
+  </div>
+
+  <!-- Address -->
+  <div class="form-group">
+      <label class="form-label-bold" for="full-name">Address</label>
+      </div>
+      <div class="form-group">
+    <label class="form-label" for="first-name-2">Country</label>
+    <select class="form-control" id="country">
+  <option>United Kingdom</option>
+  <option>United States</option>
+  <option>Afghanistan</option>
+  <option>Albania</option>
+  <option>Algeria</option>
+  <option>American Samoa</option>
+  <option>Andorra</option>
+  <option>Angola</option>
+  <option>Anguilla</option>
+  <option>Antigua & Barbuda</option>
+  <option>Argentina</option>
+  <option>Armenia</option>
+  <option>Aruba</option>
+  <option>Australia</option>
+  <option>Austria</option>
+  <option>Azerbaijan</option>
+  <option>Bahamas</option>
+  <option>Bahrain</option>
+  <option>Bangladesh</option>
+  <option>Barbados</option>
+  <option>Belarus</option>
+  <option>Belgium</option>
+  <option>Belize</option>
+  <option>Benin</option>
+  <option>Bermuda</option>
+  <option>Bhutan</option>
+  <option>Bolivia</option>
+  <option>Bosnia & Herzegovina</option>
+  <option>Botswana</option>
+  <option>Brazil</option>
+</select>
+  </div>
+
+  <div class="form-group">
+  <label class="form-label" for="first-name-2">Postcode</label>
+            <input class="input-smaller" id="Postcode" maxlength="10" name="Postcode" style="display: inline;" type="text" value="" />
+            <input type="submit" id="FindAddress" name="FindAddress" class="button-secondary" value="Find UK address" style="margin-top: 5px; margin-left: 10px; margin-bottom: 16px;"/>
+            </div>
+
+            <div class="form-group">
+      <details>
+        <summary><span class="summary">Enter address manually</span></summary>
+        <div class="form-group">
+    <label class="form-label" for="address">Address</label>
+    <input class="form-control" id="street-address" type="text">
+         </div>
+         <div class="form-group">
+    <input class="form-control" id="street-address-2" type="text">
+         </div>
+         <div class="form-group">
+    <input class="form-control" id="street-address-3" type="text">
+         </div>
+         <div class="form-group">
+    <label class="form-label" for="town-city">Town or city</label>
+    <input class="form-control" id="town-city" type="text">
+         </div>
+         <div class="form-group">
+    <label class="form-label" for="county-region">County or region (optional)</label>
+    <input class="form-control" id="county-region" type="text">
+         </div>
+      </details>
+    </div>
+
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+      <span class="form-hint">You will be able to confirm all details on the following page</span>
+    </div>
+    </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}

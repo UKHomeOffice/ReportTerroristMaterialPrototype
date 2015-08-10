@@ -1,0 +1,67 @@
+{{<layout}}
+
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+
+  <a href="question07" class="no-back-link">Back</a>    <span class="example-back-link">Question 7 of 8</span>
+
+  <form action="question09" method="get" class="form" name="certificate">
+
+
+    <!-- Date of birth -->
+
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">When did you place your order?</label>
+    </div>
+    <div class="form-group">
+      <fieldset>
+        <div class="form-date">
+
+
+
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31" name="order-date-day" required>
+          </div>
+
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12" name="order-date-month" required>
+          </div>
+
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2015" name="order-date-year" required>
+          </div>
+        </div>
+
+      </fieldset>
+      <p class="form-hint">For example, 31 10 2014</p>
+    </div>
+
+
+</div>
+
+    </div>
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
+
+{{/layout}}
