@@ -1,69 +1,67 @@
 {{<layout}}
 
 {{$head}}
-{{>includes/elements_head}}
+  {{>includes/elements_head}}
 {{/head}}
 
 {{$content}}
 <main id="content" role="main">
 
 
-  <a href="question06" class="no-back-link">Back</a>    <span class="example-back-link">Question 6 of 8</span>
+  <a href="question06" class="no-back-link">Back</a>    <span class="example-back-link">Question 7 of 10</span>
 
   <form action="question08" method="get" class="form" name="certificate">
 
 
+    <!-- Date of birth -->
+
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">When did you place your order?</label>
+    </div>
+    <div class="form-group">
+      <fieldset>
+        <div class="form-date">
 
 
 
-  <!-- Order type paid for -->
-  <div class="form-group">
-    <label class="form-label-bold" for="ni-number">Which service did you pay for?
-    </label>
-  </div>
-  <div class="form-group">
-    <label class="block-label" for="radio-stan">
-      <input id="radio-stan" type="radio" name="service-type" value="Standard" data-storage="standard">
-      Standard
-    </label>
-    <label class="block-label" for="radio-pri">
-      <input id="radio-pri" type="radio" name="service-type" value="Priority" data-storage="priority">
-      Priority
-    </label>
-  </div>
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31" name="order-date-day" required>
+          </div>
 
-  <!-- Order number -->
-  <div class="form-group">
-    <label class="form-label-bold" for="ni-number">What is the order number?
-    </label>
-  </div>
-  <div class="form-group">
-    <input type="text" class="form-control" id="order-number" name="order-number">
-  </div>
-  <div class="form-group">
-    <details>
-      <summary><span class="summary">Help finding the order number</span></summary>
-      <div class="panel-indent">
-        <p>
-          Your order number would have been given to you when you ordered by telephone.  Orders typically look like this 12345-1.
-        </p>
-      </div>
-    </details>
-  </div>
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12" name="order-date-month" required>
+          </div>
+
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2015" name="order-date-year" required>
+          </div>
+        </div>
+
+      </fieldset>
+      <p class="form-hint">For example, 31 10 2014</p>
+    </div>
 
 
-  <!-- Primary buttons, secondary links -->
-  <div class="form-group">
-    <input type="submit" class="button" value="Continue">
-  </div>
+</div>
 
-</form>
+    </div>
+
+
+    <!-- Primary buttons, secondary links -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
 
 </main><!-- / #page-container -->
 {{/content}}
 
 {{$bodyEnd}}
-{{>includes/elements_scripts}}
+  {{>includes/elements_scripts}}
 {{/bodyEnd}}
 
 {{/layout}}

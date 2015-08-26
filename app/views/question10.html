@@ -7,27 +7,16 @@
 {{$content}}
 <main id="content" role="main">
 
-<a href="question10" class="no-back-link">Back</a>    <span class="example-back-link">Question 7 of 7</span>
+<a href="question09" class="no-back-link">Back</a>    <span class="example-back-link">Question 10 of 10</span>
 
-  <form action="confirmation2" method="get" class="form" name="certificate">
+  <form action="confirmation" method="get" class="form" name="certificate">
 
    <!-- Contact details -->
+   <!-- Contact details -->
    <div class="form-group">
-      <label class="form-label-bold" for="full-name">What are your contact details?</label>
+      <label class="form-label-bold" for="full-name">What is your address?</label>
     </div>
-    <div class="form-group">
-    <label class="form-label" for="first-name-2">Name</label>
-    <input class="form-control" id="first-name-2" type="text" name="first-name-2" required>
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="email-address">Email address</label>
-    <input class="form-control" id="email-address" type="text" name="email-address" required>
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="telephone-number">Contact telephone number
-    <span class="form-hint">If possible, tell us your daytime telephone number</span></label>
-    <input class="form-control" id="telephone-number" type="numerals" name="telephone-number" required>
-  </div>
+
 
   <!-- Address -->
   <div class="form-group">
@@ -69,17 +58,8 @@
 </select>
   </div>
 
-  <div class="form-group">
-  <label class="form-label" for="first-name-2">Postcode</label>
-            <input class="input-smaller" id="Postcode" maxlength="10" name="Postcode" style="display: inline;" type="text" value="" />
-            <input type="submit" id="FindAddress" name="FindAddress" class="button-secondary" value="Find UK address" style="margin-top: 5px; margin-left: 10px; margin-bottom: 16px;"/>
-            </div>
-
-            <div class="form-group">
-      <details>
-        <summary><span class="summary">Enter address manually</span></summary>
-        <div class="form-group">
     <label class="form-label" for="address">Address</label>
+             <div class="form-group">
     <input class="form-control" id="street-address" type="text">
          </div>
          <div class="form-group">
@@ -89,15 +69,12 @@
     <input class="form-control" id="street-address-3" type="text">
          </div>
          <div class="form-group">
-    <label class="form-label" for="town-city">Town or city</label>
-    <input class="form-control" id="town-city" type="text">
+    <input class="form-control" id="street-address-4" type="  text">
          </div>
          <div class="form-group">
-    <label class="form-label" for="county-region">County or region (optional)</label>
-    <input class="form-control" id="county-region" type="text">
+    <input class="form-control" id="street-address-5" type="text">
          </div>
-      </details>
-    </div>
+
 
 
 
@@ -107,6 +84,7 @@
       <span class="form-hint">You will be able to confirm all details on the following page</span>
     </div>
     </form>
+
 
 </main><!-- / #page-container -->
 {{/content}}
