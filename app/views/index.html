@@ -1,13 +1,71 @@
 {{<layout}}
 
-{{$pageTitle}}Index{{/pageTitle}}
+{{$head}}
+  {{>includes/elements_head}}
+{{/head}}
 
 {{$content}}
+
+
 <main id="content" role="main">
-  <header class="page-header">
-    <h1>Welcome to the GOV.UK prototyping kit</h1>
-  </header>
+
+  <h1 class="heading-large">Report online terrorist material</h1>
+<section class="intro">
+    <div class="grid-row">
+      <div class="column-two-thirds">
+        <div class="text"><p>Report illegal terrorist information, pictures or videos you’ve found on the internet. Your report will be treated anonymously.</p>
+        </div>
+      </div>
+
+      <div class="column-third">
+
+        <div class="inner group related-subsection">
+          <h2 id="parent-subsection">Reporting crimes and getting compensation</h2>
+            <nav role="navigation" aria-labelledby="parent-subsection">
+              <ul>
+                <li><a href="/terrorism-national-emergency">Terrorism and national emergencies</a>
+                </li>
+                <li><a href="/report-suspicious-activity-to-mi5">Report suspicious activity to MI5</a>
+                </li>
+                <li><a href="/report-hate-crime">Report hate crime</a>
+                </li>
+                <li class="related-topic"><a href="/browse/justice/reporting-crimes-compensation">More <span class="visuallyhidden">in Reporting crimes and getting compensation</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <p id="get-started" class="get-started group">
+        <a href="https://eforms.homeoffice.gov.uk/outreach/terrorism_reporting.ofml" rel="external" data-transaction-slug="report-terrorism" class="button" role="button">Start now</a>
+        <span class="destination"> on the Home Office website</span>
+      </p>
+</section>
+
+<section class="more">
+      <div id="before-you-start">
+        <h1>Before you start</h1>
+        <p>Terrorist material could include:</p>
+          <ul>
+            <li>articles, images, speeches or videos that promote  terrorism
+            </li>
+            <li>content encouraging people to commit acts of terrorism
+            </li>
+            <li>websites made by terrorist organisations
+            </li>
+            <li>videos of terrorist attacks </li>
+          </ul>
+        </div>
+</section>
+
+
 </main>
+
 {{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+{{/bodyEnd}}
 
 {{/layout}}
