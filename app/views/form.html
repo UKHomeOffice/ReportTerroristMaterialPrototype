@@ -9,6 +9,8 @@
 
   <h1 class="heading-xlarge">Report online terrorist material</h1>
 
+  <form action="form_2" method="get" class="form" name="certificate">
+
     <div class="panel-indent">
       <p>If you are reporting a crime that is happening right now or if <br>there is a threat to someone's life, call 999 immediately.</p>
     </div>
@@ -17,7 +19,7 @@
       <div class="form-group">
         <label class="form-label-bold" for="input-text">1. Please enter the specific web address that <br>you are reporting</label>
         <p class="form-hint">The web address can be found at the top of the browser <br>window and starts with "http://" or "https://"</p><input type=
-        "text" class="form-control" id="web-address" name="web-address" cols="40" />
+        "text" class="form-control" id="web-address" name="web-address" cols="40"  required/>
       </div>
 
       <div class="form-group">
@@ -38,16 +40,57 @@
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">4. If you are willing to be contacted to answer any additional questions about this report, <br>please provide your contact details (optional)
-        </p><textarea class="form-control" id="textarea" cols="40" rows="2"></textarea>
+        <label class="form-label-bold" for="input-text">4. Are you willing to be contacted if more information <br>is needed about this report?
       </label>
       </div>
 
-      <div class="form-group">
-        <input type="radio" id-"r1"/><label for="r1">r 1 </label>
-      </div>
 
-      <a href="file:///Tomcat/Jobs/HomeOffice/Reporting_terrorist_material_online/Prototype_1-simple/index.html" class="button">Send information</a>
+<div class="form-group">
+ <label class="block-label selectable" for="radio-1">
+   <input class="selectable" id="radio-1" type="radio" name="radio-order-how" value="no-submit" data-storage="no-submit">
+          No, submit annonymously
+ </label>
+
+  <label class="block-label selectable" for="radio-2">
+    <input id="radio-2" type="radio" name="radio-order-how" value="yesfine" data-storage="yesfine">
+    Yes, that is fine
+  </label>
+  <div class="connected optional-section optional-section-radio-order-how" data-toggle-value="yesfine">
+
+  <div class="panel-indent">
+    <div class="form-group">
+      <label class="form-label" for="email">Email address</label>
+      <input class="form-control" id="email" name="email" type="text" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="number">Phone number</label>
+      <input class="form-control" id="number" name="number" type="text">
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">About your privacy</span></summary>
+        <div class="panel-indent">
+          <p>
+            The contact details you have provided would be used soley for requesting more details about the report you have submitted to assist the Police in their enquiries. Your details will remain confidential and will not be passed on to any other parties.
+          </p>
+          <p>
+            Lorem ipsum
+          </p>
+        </div>
+      </details>
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+    <!-- Primary button -->
+    <div class="form-group">
+      <input type="submit" class="button" value="Submit">
+    </div>
+    </form>
 
 
 
