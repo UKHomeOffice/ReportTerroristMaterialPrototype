@@ -9,6 +9,8 @@
 
   <h1 class="heading-xlarge">Report online terrorist material</h1>
 
+  <div class="column-two-thirds">
+
   <form action="form_2" method="get" class="form" name="certificate">
 
     <div class="panel-indent">
@@ -17,30 +19,49 @@
 
   <form name="test-form" class="form">
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">1. Please enter the specific web address that <br>you are reporting</label>
-        <p class="form-hint">The web address can be found at the top of the browser <br>window and starts with "http://" or "https://"</p><input type=
+        <label class="form-label-bold" for="input-text">1. Please enter the specific web address that you are reporting</label>
+        <p class="form-hint">The web address can be found at the top of the browser window and starts with "http://" or "https://"</p>
+        <input type=
         "text" class="form-control" id="web-address" name="web-address" cols="40"  required/>
       </div>
 
       <div class="form-group">
         <label class="block-label" for="checkbox-1">
-          <input id="checkbox-1" type="checkbox" value="waste-animal">This material may be disturbing to the viewer</label>
+          <input id="checkbox-1" type="checkbox" value="disturbing">This material may be disturbing to the viewer</label>
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">2. Describe where we can see the offensive <br>information on this page (optional)
+        <details>
+          <summary><span class="summary">Add another web address</span></summary>
+          <div class="panel-indent">
+            <p>
+              Additional web address <br>
+              <input type=
+              "text" class="form-control" id="web-address" name="web-address" cols="40"  required/>
+                    <div class="form-group">
+                      <label class="block-label" for="checkbox-2">
+                        <input id="checkbox-2" type="checkbox" value="disturbing2">This material may be disturbing to the viewer</label>
+                    </div>
+            </p>
+          <summary><span class="summary">Add another web address</span></summary>
+          </div>
+        </details>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label-bold" for="input-text">2. Describe where we can see the offensive information on this page (optional)
         </p><textarea class="form-control" id="textarea" cols="40" rows="5"></textarea>
       </label>
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">3. Tell us more about the material or information <br>you are submitting (optional)
+        <label class="form-label-bold" for="input-text">3. Tell us more about the material or information you are submitting (optional)
         </p><textarea class="form-control" id="textarea" cols="40" rows="5"></textarea>
       </label>
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">4. Are you willing to be contacted if more information <br>is needed about this report?
+        <label class="form-label-bold" for="input-text">4. Are you willing to be contacted if more information is needed about this report?
       </label>
       </div>
 
@@ -59,11 +80,15 @@
 
   <div class="panel-indent">
     <div class="form-group">
+      <label class="form-label" for="email">Name (optional)</label>
+      <input class="form-control" id="name" name="name" type="text">
+    </div>
+    <div class="form-group">
       <label class="form-label" for="email">Email address</label>
       <input class="form-control" id="email" name="email" type="text" required>
     </div>
     <div class="form-group">
-      <label class="form-label" for="number">Phone number</label>
+      <label class="form-label" for="number">Phone number (optional)</label>
       <input class="form-control" id="number" name="number" type="text">
     </div>
 
@@ -73,9 +98,6 @@
         <div class="panel-indent">
           <p>
             Your contact details will only be used if further information is required. Your details will remain confidential and will not be used for any other purpose or passed on to any other parties.
-          </p>
-          <p>
-            Lorem ipsum
           </p>
         </div>
       </details>
@@ -98,14 +120,28 @@
       <details>
         <summary><span class="summary">Is there anything wrong with this page?</span></summary>
           <p>
-            Help us to improve
+                    <div class="panel-indent">
+            Help us to improve this page
           </p>
           <p>
-            Lorem ipsum
+
+              <div class="form-group">
+                <label class="form-label" for="What_doing">What were you doing?</label>
+                <input class="form-control" id="What_doing" name="What_doing" type="text" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="What_wrong">What went wrong?</label>
+                <input class="form-control" id="What_wrong" name="What_wrong" type="text">
+              </div>
+
+              <!-- Feedback submit button -->
+              <div class="form-group">
+                <input type="submit" class="button" value="Send feedback">
+              </div>
           </p>
       </details>
     </div>
-
+    </div>
 
 </main><!-- / #page-container -->
 {{/content}}
