@@ -17,17 +17,12 @@
       <p>If you are reporting a crime that is happening right now or if there is a threat to someone's life, call 999 immediately.</p>
     </div>
 
-  <form name="test-form" class="form">
+  <!--<form name="test-form" class="form">-->
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">1. Please enter the specific web address that you are reporting</label>
-        <p class="form-hint">The web address can be found at the top of the browser window and starts with "http://" or "https://"</p>
+        <label class="form-label-bold" for="input-text">1. Enter the specific web address that you are reporting</label>
+        <p class="form-hint">The web address can be found at the top of the browser window and starts with "www.", "http://" or "https://" </p>
         <input type=
         "text" class="form-control" id="web-address" name="web-address" cols="40"  required/>
-      </div>
-
-      <div class="form-group">
-        <label class="block-label" for="checkbox-1">
-          <input id="checkbox-1" type="checkbox" value="disturbing">This material may be disturbing to the viewer</label>
       </div>
 
       <div class="form-group">
@@ -37,11 +32,7 @@
             <p>
               Additional web address <br>
               <input type=
-              "text" class="form-control" id="web-address" name="web-address" cols="40"  required/>
-                    <div class="form-group">
-                      <label class="block-label" for="checkbox-2">
-                        <input id="checkbox-2" type="checkbox" value="disturbing2">This material may be disturbing to the viewer</label>
-                    </div>
+              "text" class="form-control" id="web-address" name="web-address" cols="40"/>
             </p>
           <summary><span class="summary">Add another web address</span></summary>
           </div>
@@ -49,13 +40,14 @@
       </div>
 
       <div class="form-group">
-        <label class="form-label-bold" for="input-text">2. Describe where we can see the offensive information on this page (optional)
+        <label class="form-label-bold" for="input-text">2. Describe where we can find the offensive information on this page (optional)
         </p><textarea class="form-control" id="textarea" cols="40" rows="5"></textarea>
       </label>
       </div>
 
       <div class="form-group">
         <label class="form-label-bold" for="input-text">3. Tell us more about the material or information you are submitting (optional)
+                  <p class="form-hint">For example, how you came across it or heard about it, if you know any of the people involved, any names or locations</p>
         </p><textarea class="form-control" id="textarea" cols="40" rows="5"></textarea>
       </label>
       </div>
@@ -84,12 +76,16 @@
       <input class="form-control" id="name" name="name" type="text">
     </div>
     <div class="form-group">
-      <label class="form-label" for="email">Email address</label>
-      <input class="form-control" id="email" name="email" type="text" required>
+      <label class="form-label" for="email">Email address (optional)</label>
+      <input class="form-control" id="email" name="email" type="text">
     </div>
     <div class="form-group">
       <label class="form-label" for="number">Phone number (optional)</label>
       <input class="form-control" id="number" name="number" type="text">
+      <label class="form-checkbox" for="checkbox-telephone-number">
+  <input id="checkbox-telephone-number" name="contact-by-text-phone" type="checkbox" value="true">
+  I need to be contacted using a text phone
+</label>
     </div>
 
     <div class="form-group">
@@ -116,6 +112,9 @@
     </form>
 
 
+
+
+    <!-- Feedback link -->
     <div class="form-group">
       <details>
         <summary><span class="summary">Is there anything wrong with this page?</span></summary>
@@ -127,7 +126,7 @@
 
               <div class="form-group">
                 <label class="form-label" for="What_doing">What were you doing?</label>
-                <input class="form-control" id="What_doing" name="What_doing" type="text" required>
+                <input class="form-control" id="What_doing" name="What_doing" type="text">
               </div>
               <div class="form-group">
                 <label class="form-label" for="What_wrong">What went wrong?</label>
@@ -140,6 +139,7 @@
               </div>
           </p>
       </details>
+    </div>
     </div>
     </div>
 
